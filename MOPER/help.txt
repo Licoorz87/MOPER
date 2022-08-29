@@ -1,0 +1,10 @@
+clicar seta, shakar
+
+apertar hint, aparecer tela de hint
+
+funcionalidades hint
+
+apertar reload, reloada
+
+funcionar verificar
+
