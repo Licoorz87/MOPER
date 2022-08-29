@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5vw;
+    color: #EFEFEF;
+}
+
+h1, h2 {
+    cursor: default;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#menu, #game, #config {
+    position: absolute;
+    margin-top: 10vh;
+    width: 90vw;
+    height: 70vh;
+}
+
+#game, #config, #hints {
+    display: none;
+}
+
+.center, .button, .square {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin-top: 5vh;
+    border: #EFEFEF 5px solid;
+    border-radius: 50px;
+    box-shadow: black 2px 3px 5px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #000;
+    border: #999 5px solid;
+    box-shadow: none;
+}
+
+.size {
+    width: 50vw;
+}
+
+.square, .minisquare {
+    cursor: pointer;
+    
+    margin-right: 5px;
+    
+    
+}
+
+.square {
+    width: 50px;
+    height: 80px;
+    border-radius: 10px;
+    border: #000 2px solid;
+    box-shadow: #000 1px 1px 3px;
+}
+
+.square:hover {
+    box-shadow: none;
+}
+
+.minisquare {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 0 75px;
+}
+
+#operators {
+    margin-top: 5vh;
+}
+
+.arrow {
+    width: 40px;
+    margin: 0 30px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.reverse {
+    transform: scaleX(-1);
+}
+
+
+/* ANIMATION */
+@keyframes select {
+    from {margin-top: 0px;}
+    to {margin-top: -30px;}
+}
+
+@keyframes unselect {
+    from {margin-top: -30px;}
+    to {margin-top: 0px;}
+}
+
+@keyframes shake {
+	0% {margin-left: 0;}
+	14% {margin-left: 30px;}
+	28% {margin-left: -30px;}
+	43% {margin-left: 15px;}
+	57% {margin-left: -15px;}
+	71% {margin-left: 7.5px;}
+	85% {margin-left: -7.5px;}
+	100% {margin-left: 0;}
+}
+
+@keyframes shake_left {
+
+}
+
+@keyframes shake_right {
+
+}
